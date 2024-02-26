@@ -32,14 +32,6 @@ pwd
 # echo "reading reverse read..."
 # echo "${myArray[1]}"
 multiqc /data4/msc20700669/outdir_one/* -o /data4/msc20700669/outdir_one/
-#fastqc "${myArray[0]}" "${myArray[1]}" -o /data4/msc20700669/outdir_one/
- #./NeoFuse -1 "${myArray:[0]}" \
-    #-2 "${myArray[1]}" \
-    #-s /data/kryan/reference/STAR_idx/ \
-    #-g /data/kryan/reference/GRCh38.primary_assembly.genome.fa \
-    #-a /data/kryan/reference/gencode.v31.annotation.gtf \
-    #-n 8 \
-    #--singularity
 #done < $files
 
 elapsed=$(( SECONDS - start_time ))
