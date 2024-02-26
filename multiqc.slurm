@@ -25,14 +25,7 @@ cat $files
 # run multiqc on all samples
 #multiqc --help
  multiqc /data4/msc20700669/raw_reads/trimmed_alpha -o /data4/msc20700669/raw_reads/trimmed_alpha
- #./NeoFuse -1 "${myArray[0]}" \
-    #-2 "${myArray[1]}" \
-    #-s /data/kryan/reference/STAR_idx/ \
-    #-g /data/kryan/reference/GRCh38.primary_assembly.genome.fa \
-    #-a /data/kryan/reference/gencode.v31.annotation.gtf \
-    #-n 8 \
-    #--singularity
-#done < $files
+done < $files
 
 elapsed=$(( SECONDS - start_time ))
 eval "echo Elapsed time: $(date -ud "@$elapsed" +'$((%s/3600/24)) days %H hr %M min %S sec')"
