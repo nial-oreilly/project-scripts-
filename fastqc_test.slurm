@@ -33,13 +33,6 @@ pwd
 # echo "${myArray[1]}"
 fastqc /data/bdigby/Projects/D_O_Connor/raw_reads/4723_R1_001.fastq.gz /data/bdigby/Projects/D_O_Connor/raw_reads/4723_R2_001.fastq.gz -o /data4/msc20700669/outdir_one/
 #fastqc "${myArray[0]}" "${myArray[1]}" -o /data4/msc20700669/outdir_one/
- #./NeoFuse -1 "${myArray[0]}" \
-    #-2 "${myArray[1]}" \
-    #-s /data/kryan/reference/STAR_idx/ \
-    #-g /data/kryan/reference/GRCh38.primary_assembly.genome.fa \
-    #-a /data/kryan/reference/gencode.v31.annotation.gtf \
-    #-n 8 \
-    #--singularity
 #done < $files
 
 elapsed=$(( SECONDS - start_time ))
