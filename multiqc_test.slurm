@@ -17,20 +17,6 @@ start_time=$SECONDS
 cd /data4/msc20700669/raw_reads/multiqc
 echo "current directory..."
 pwd
-#mkdir outdir
-#files="/data4/msc20700669/raw_reads/outdir_one"
-#echo "my files"
-#cat $files
-# run fastqc on all samples
-#fastqc --help
-#while IFS=$'\t' read -r -a myArray
-#do
-# echo "reading file..."
-# echo "${myArray[0]}"
-# var=$(date)
-# echo "$var"
-# echo "reading reverse read..."
-# echo "${myArray[1]}"
 multiqc /data4/msc20700669/outdir_one/* -o /data4/msc20700669/outdir_one/
 #done < $files
 
